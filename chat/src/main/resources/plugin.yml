@@ -1,0 +1,4 @@
+name: Chat
+api-version: '1.16'
+version: 0.0.1-ALPHA
+main: com.github.pikokr.mc.chat.plugin.ChatPlugin
