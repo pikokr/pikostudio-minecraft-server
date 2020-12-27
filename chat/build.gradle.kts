@@ -11,3 +11,7 @@ tasks {
         doLast { println("${shadowJar.get().archiveFileName.get()} copied to ${dest.path}") }
     }
 }
+
+dependencies {
+    implementation("im.kimcore:inko.kt:1.1")
+}
