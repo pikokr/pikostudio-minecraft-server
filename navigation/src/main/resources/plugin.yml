@@ -3,3 +3,6 @@ main: com.github.pikokr.mc.navigation.plugin.NavigationPlugin
 version: 0.0.1-ALPHA
 depend:
   - Kotlin
+commands:
+  navigation:
+    description: Navigation
