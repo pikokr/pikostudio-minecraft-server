@@ -8,8 +8,12 @@ import org.bukkit.event.player.AsyncPlayerChatEvent
 class ChatListener : Listener {
     @EventHandler
     fun onChat(e: AsyncPlayerChatEvent) {
-        if (e.message.startsWith("k")) {
-            e.message = e.message.slice(1..e.message.length-1).asKorean
+        if (e.message.startsWith("!") && e.message.length > 1) {
+            e.message = e.message.slice(1 until e.message.length)
+        } else {
+            if (e.message.startsWith("k")) {
+                e.message = e.message.slice(1 until e.message.length).asKorean
+            }
         }
     }
 }
