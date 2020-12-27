@@ -2,3 +2,7 @@ name: Core
 api-version: '1.16'
 version: 0.0.1-ALPHA
 main: com.github.pikokr.mc.core.plugin.CorePlugin
+
+commands:
+  admin:
+    permission: pikostudio.core.commands.admin
