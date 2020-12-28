@@ -22,13 +22,13 @@ class FollowingBow : Listener {
         }
     }
 
-    @EventHandler
-    fun onProjectileHit(e: ProjectileHitEvent) {
-        if (e.entityType == EntityType.ARROW) {
-            e.entity.shooter ?: return
-            if (e.entity.shooter !is Player) return
-            val p = e.entity.shooter as Player
-            p.setCooldown(Material.BOW, 0)
-        }
-    }
+//    @EventHandler
+//    fun onProjectileHit(e: ProjectileHitEvent) {
+//        if (e.entityType == EntityType.ARROW) {
+//            e.entity.shooter ?: return
+//            if (e.entity.shooter !is Player) return
+//            val p = e.entity.shooter as Player
+//            p.setCooldown(Material.BOW, 0)
+//        }
+//    }
 }
