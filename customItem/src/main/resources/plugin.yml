@@ -1,0 +1,11 @@
+name: CustomItems
+api-version: '1.16'
+version: 0.0.1-ALPHA
+main: com.github.pikokr.mc.customitems.plugin.CustomItemsPlugin
+depend:
+  - Kotlin
+
+commands:
+  /give:
+    description: Give item to a player
+    permission: customItems.commands.give
