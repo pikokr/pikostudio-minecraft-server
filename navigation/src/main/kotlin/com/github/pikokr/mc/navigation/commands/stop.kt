@@ -1,6 +1,7 @@
 package com.github.pikokr.mc.navigation.commands
 
 import com.github.noonmaru.kommand.KommandContext
+import org.bukkit.ChatColor
 import org.bukkit.Material
 import org.bukkit.entity.Player
 
@@ -15,5 +16,5 @@ fun stopNavigation(ctx: KommandContext) {
             player.inventory.remove(i)
         }
     }
-    player.sendMessage("네비게이션을 종료했어요!")
+    player.sendMessage(ChatColor.translateAlternateColorCodes('&', "&a네비게이션을 종료했어요!"))
 }
