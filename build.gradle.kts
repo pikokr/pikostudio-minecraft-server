@@ -16,6 +16,7 @@ subprojects {
     repositories {
         maven(url = "https://papermc.io/repo/repository/maven-public/")
         maven(url = "https://jitpack.io/")
+        maven(url = "https://repo.dmulloy2.net/nexus/repository/public/")
     }
 
     fun DependencyHandlerScope.implementationOnlyCore(dependencyNotation: Any): Dependency? {
@@ -29,6 +30,8 @@ subprojects {
         compileOnly(kotlin("stdlib-jdk8"))
         compileOnly("com.destroystokyo.paper:paper-api:1.16.4-R0.1-SNAPSHOT")
         implementationOnlyCore("com.github.noonmaru:kommand:0.6.3")
+        implementationOnlyCore("com.github.noonmaru:tap:3.2.7")
+        implementationOnlyCore("com.comphenix.protocol:ProtocolLib:4.5.0")
     }
 
     tasks {

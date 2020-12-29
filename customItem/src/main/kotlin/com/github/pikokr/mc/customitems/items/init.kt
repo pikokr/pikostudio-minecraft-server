@@ -3,7 +3,7 @@ package com.github.pikokr.mc.customitems.items
 import com.github.pikokr.mc.customitems.plugin.CustomItemsPlugin
 import com.github.pikokr.mc.customitems.registry.CustomItemsRegistry
 import org.bukkit.Material
-import org.bukkit.entity.Arrow
+import org.bukkit.enchantments.Enchantment
 import org.bukkit.event.block.BlockBreakEvent
 import org.bukkit.event.player.PlayerInteractEvent
 import org.bukkit.inventory.ItemStack
@@ -24,15 +24,9 @@ fun initItems(plugin: CustomItemsPlugin) {
             object : CustomItem(material) {
                 init {
                     val meta = itemMeta
-                    meta.setDisplayName("테스트중인 곡괭이")
+                    meta.setDisplayName("다이아몬드 곡괭이!")
+                    meta.addEnchant(Enchantment.DIG_SPEED, 32767, true)
                     itemMeta = meta
-                }
-
-                override fun onBreakWith(event: BlockBreakEvent, plugin: CustomItemsPlugin) {
-                    event.player.inventory.itemInMainHand.itemMeta?.let { tool ->
-                        event.player.setCooldown(material, 20)
-                        event.block.breakNaturally(this)
-                    }
                 }
             }
         }

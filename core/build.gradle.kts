@@ -1,5 +1,5 @@
 tasks {
     shadowJar {
-        archiveBaseName.set("core")
+        archiveBaseName.set("Core")
     }
 }
