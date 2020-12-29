@@ -15,6 +15,7 @@ fun initItems(plugin: CustomItemsPlugin) {
                 init {
                     val meta = itemMeta
                     meta.setDisplayName("쓸데없는(?) 활")
+                    meta.lore = arrayListOf("화살을 쏘면 화살을 타고 날아갑니다.", "반대쪽 손에 TNT을 들고 활을 쏘면 TNT가 날아갑니다.")
                     itemMeta = meta
                 }
             }

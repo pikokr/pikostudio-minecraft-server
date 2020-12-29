@@ -16,7 +16,8 @@ class CustomItemsPlugin : JavaPlugin() {
         initItems(this)
         server.pluginManager.registerEvents(CustomItemListener(this), this)
         server.pluginManager.registerEvents(FollowingBow(), this)
-        registerRecipes()
+        // plugman 사용해서 레시피 리로드가 안되기 때문에 임시 주석처리
+//        registerRecipes()
     }
 
     private fun registerRecipes() {
