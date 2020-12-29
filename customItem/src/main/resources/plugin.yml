@@ -4,6 +4,7 @@ version: 0.0.1-ALPHA
 main: com.github.pikokr.mc.customitems.plugin.CustomItemsPlugin
 depend:
   - Kotlin
+  - core
 
 commands:
   /give:

@@ -4,3 +4,4 @@ version: 0.0.1-ALPHA
 main: com.github.pikokr.mc.protection.plugin.ProtectionPlugin
 depend:
   - Kotlin
+  - Core
