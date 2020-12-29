@@ -1,4 +1,4 @@
-FROM itzg/minecraft-server
+FROM itzg/minecraft-server:1.11.0-adopt11
 
 ENV EULA=true
 ENV TYPE=PAPER

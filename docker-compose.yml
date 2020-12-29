@@ -16,3 +16,5 @@ services:
       - /docker-setup-plugin
       - https://github.com/noonmaru/kotlin-plugin/releases/download/1.4.10/Kotlin.jar
       - https://ci.lucko.me/job/LuckPerms/1232/artifact/bukkit/build/libs/LuckPerms-Bukkit-5.2.67.jar
+      - https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/target/ProtocolLib.jar
+      - https://github.com/noonmaru/tap/releases/download/3.2.7/Tap.jar
